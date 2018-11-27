@@ -1,0 +1,16 @@
+<html>
+<h2>Your result: {{ result }}</h2>
+<h3>Enter values and select operator</h3>
+<form action="{{ url_for('operation') }}" method="post">
+
+    First number: <input type="number" name="f_number"><br>
+    Second number: <input type="number" name="s_number"><br>
+
+    <input type="radio" name="operator" value="add" checked="checked">Add</input>
+    <input type="radio" name="operator" value="subtract">Subtract</input>
+    <input type="radio" name="operator" value="multiply">Multiply</input>
+    <input type="radio" name="operator" value="divide">Divide</input>
+
+    <button type="submit">Go</button>
+</form>
+</html>
